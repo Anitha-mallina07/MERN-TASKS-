@@ -1,0 +1,48 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #4fa9d6, #00c9a7, #8b5cf6);
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Bar Container */
+.navbar {
+    margin-top: 30px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Menu Items */
+.nav-menu li {
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Active Menu Item */
+.nav-menu .active {
+    background-color: white;
+    color: #00a5a5;
+}
+
+/* Hover Effect */
+.nav-menu li:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
